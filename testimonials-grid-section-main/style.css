@@ -1,0 +1,73 @@
+body {
+    background-color: hsl(214, 17%, 92%);
+    font-family: oswald, sans-serif;
+    font-size: 13px;
+    padding: 1rem;   
+}
+
+img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 90px;
+    border: 5px solid #4e4d4e;
+}
+
+.grid-container{
+    display: grid;
+    border-radius: 5px;
+    grid-template-areas:
+   'p p p b w'
+   'p p p b w'
+   'g d d d w'
+   ;  
+    gap: 1rem; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+p{
+    display: flex;
+    align-items: center;
+}
+
+.purple {
+    grid-area: p;
+    background-color:  hsl(263, 55%, 52%);
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blue {
+    grid-area: b;
+    background-color:hsl(217, 19%, 35%);
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.green {
+    grid-area: g;
+    background-color: #FFFFFF;
+    color: hsl(0, 0%, 8);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.darkgray {
+    grid-area: d;
+    background-color:  hsl(217, 29%, 12%);
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.white {
+    grid-area: w;
+    background-color: #FFFFFF;
+    color: black;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
